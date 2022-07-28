@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Inscrição</title>
+    <link rel="icon" href="https://kenzie.com.br/favicon.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <label for="nome">Nome</label>
+      <input
+        class="inputBox"
+        type="text"
+        placeholder="Digite seu nome aqui..."
+        id="nome"
+        name="nome"
+        required
+      />
+
+      <label for="email">Email</label>
+      <input
+        class="inputBox"
+        type="text"
+        placeholder="Digite seu email aqui..."
+        id="email"
+        name="email"
+        required
+      />
+
+      <label for="descricao">Descrição</label>
+      <textarea
+        name="descricao"
+        id="descricao"
+        cols="30"
+        rows="3"
+        placeholder="Fale mais sobre você aqui..."
+      ></textarea>
+
+      <label for="modulos">Módulo</label>
+      <select class="grey" onclick="changeColor()" name="modulo" id="modulos">
+        <option disabled selected hidden value="">Escolher um módulo</option>
+        <option value="1">Módulo 1</option>
+        <option value="2">Módulo 2</option>
+        <option value="3">Módulo 3</option>
+        <option value="4">Módulo 4</option>
+        <option value="5">Módulo 5</option>
+        <option value="6">Módulo 6</option>
+      </select>
+
+      <label for="senha">Senha</label>
+      <input
+        class="inputBox"
+        type="password"
+        placeholder="Digite sua senha aqui..."
+        id="senha"
+        required
+      />
+
+      <label for="confirmarSenha">Confirmar Senha</label>
+      <input
+        class="inputBox"
+        type="password"
+        placeholder="Digite sua senha novamente aqui..."
+        id="confirmarSenha"
+        required
+      />
+
+      <p>Deseja receber novidades em seu e-mail?</p>
+      <div class="opcoes">
+        <label for="Sim">Sim</label>
+        <input
+          class="sim"
+          type="radio"
+          name="newsletter"
+          id="Sim"
+          value="true"
+        />
+        <label for="Nao">Não</label>
+        <input type="radio" name="newsletter" id="Nao" value="false" />
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
